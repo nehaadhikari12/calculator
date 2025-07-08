@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #ad9595;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.calculator{
+    background-color: rgb(186, 182, 182);
+    border: 1px wheat;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(194, 172, 172, 0.5);
+}
+#display{
+    grid-template-columns: repeat(4, 1fr);
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(86, 61, 70);
+    border-radius: 7px;
+    width: 100%;
+    text-align: right;
+    font-size: 2em;
+    color: white;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;   
+}
+
+button{
+    cursor: pointer;
+    padding: 20px;
+    background-color: rgb(41, 35, 38);
+    font-size: 1.5em;
+    border: none;
+    border-radius:5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color:rgb(41, 35, 38);
+}
+
+button.equal{
+    background-color: rgb(41, 35, 38);
+    color: white;
+    grid-row: span 2;
+}
+
+button.zero{
+    grid-column: span 2;
+}
+
+button.equal:hover{
+    background-color: rgb(41, 35, 38);
+}
+
+button.operator{
+    background-color: rgb(41, 35, 38);
+}
+
+button.operator:hover{
+    background-color: rgb(41, 35, 38);
+}
+
+button.clear{
+    background-color: rgb(41, 35, 38);
+}
+
+button.clear:hover{
+    background-color: rgb(41, 35, 38);
+}
